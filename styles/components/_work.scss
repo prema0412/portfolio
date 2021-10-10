@@ -1,0 +1,64 @@
+@use "../base/abstracts" as *;
+
+.my-work {
+
+    background-color: $clr-accent;
+    color: $clr-dark;
+    text-align: center;
+    margin-bottom: 0;
+    height: 40em;
+
+
+    &__title 
+    {
+        color: $clr-dark;
+        font-size: $fs-h1;
+        font-family: $ff-primary;
+        font-weight: $fw-bold;
+        position: relative;
+        text-align: center;
+     }
+
+     &__subtitle {
+        display: block;
+        color: $clr-dark;
+        font-size: $fs-h3;
+        font-family: $ff-primary;
+        font-weight: $fw-bold;
+        padding: 5px;
+        background: $clr-accent;
+     } 
+
+     .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            margin-top: 1.5em;
+            height: 28em;
+            grid-gap: 1em;
+            
+
+            &__item {
+                background-color: var(--clr-accent);
+                overflow: hidden;
+                border: .2em solid $clr-dark;
+
+                a i {
+                    align-self: center;
+                }
+
+
+                &--img {
+
+                    width: 120px;
+                    height: 160px;
+                    position: relative;
+                    align-self: center;
+                }
+                  
+
+
+          }   
+  }
+
+}
+

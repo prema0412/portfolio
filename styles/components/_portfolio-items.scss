@@ -1,0 +1,39 @@
+@use "../base/abstracts" as *;
+
+.portfolio-item-individual {
+
+    // display: grid;
+    //     grid-template-columns: 300px 1fr;
+    //     grid-template-areas: 
+    //     'img title';
+    //     grid-column-gap: 2em;
+
+    //     &__title {
+    //         grid-area: title;
+    //         grid-column:  1;
+    //         background: $clr-accent;
+    //         color: $clr-dark;
+    //         font-size: $fs-h3;
+    //         font-weight: $fw-bold;
+    //         font-family: $ff-primary;
+    //     }
+
+    //     &__img {
+    //         grid-area: img;
+    //         grid-column:  2;
+    //         position: relative;
+    //         z-index: 2;
+    //         width: 300px;
+    //     }
+    // }        
+
+        padding: 0 2em 2em;
+        margin: 0 auto;
+        max-width: 1000px;
+    
+    
+    .portfolio-item-individual p {
+        max-width: 800px;
+    }
+
+}

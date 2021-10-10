@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+@media (min-width: 768px) {
+  .intro {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    width: min-content;
+    margin: 0 auto;
+    grid-gap: 1em;
+    grid-template-areas: "img title" "img subtitle";
+  }
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+  .intro__subtitle {
+    grid-area: subtitle;
+    grid-column: -1/1;
+    grid-row: 2;
+    position: relative;
+    text-align: right;
+    align-self: start;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    display: grid;
+    grid-template-areas: "img" "title" "subtitle";
+  }
+}
+.intro {
+  margin-top: 2em;
+}
+.intro__title {
+  color: #002244;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+}
+.intro__subtitle {
+  display: block;
+  color: #002244;
+  font-size: 2.25rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  padding: 5px;
+  background: #008080;
+}
+.intro__image {
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125 0.25em rgba(0, 0, 0, 0.15);
+}

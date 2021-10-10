@@ -1,0 +1,48 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+.my-work {
+  background-color: #008080;
+  color: #002244;
+  text-align: center;
+  margin-bottom: 0;
+  height: 40em;
+}
+.my-work__title {
+  color: #002244;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  position: relative;
+  text-align: center;
+}
+.my-work__subtitle {
+  display: block;
+  color: #002244;
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  padding: 5px;
+  background: #008080;
+}
+.my-work .portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 1.5em;
+  height: 28em;
+  grid-gap: 1em;
+}
+.my-work .portfolio__item {
+  background-color: var(--clr-accent);
+  overflow: hidden;
+  border: 0.2em solid #002244;
+}
+.my-work .portfolio__item a i {
+  align-self: center;
+}
+.my-work .portfolio__item--img {
+  width: 120px;
+  height: 160px;
+  position: relative;
+  align-self: center;
+}

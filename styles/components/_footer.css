@@ -1,0 +1,39 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+.footer {
+  background: #111;
+  color: var(--clr-accent);
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+}
+.footer__link {
+  font-weight: var(--fw-bold);
+}
+.footer a {
+  color: #E0EEEE;
+  text-decoration: none;
+}
+.footer__link:hover,
+.footer .social-list__link {
+  opacity: 0.7;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+.footer .social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+  color: #E0EEEE;
+}
+.footer .social-list__item {
+  margin: 0 0.5em;
+  color: #E0EEEE;
+}
+.footer .social-list__link {
+  padding: 0.5em;
+}

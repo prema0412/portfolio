@@ -1,0 +1,64 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 0.1em;
+  margin-bottom: 2em;
+  background-color: var(--clr-light);
+  font-family: var(--ff-secondary);
+}
+.about-me__title {
+  color: #002244;
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  position: relative;
+  text-align: right;
+}
+.about-me__subtitle {
+  display: block;
+  color: #002244;
+  font-size: 1.25rem;
+  font-family: "Montserrat";
+  font-weight: 900;
+  padding: 5px;
+  background: #008080;
+}
+.about-me__img {
+  box-shadow: var(--bs);
+}
+.about-me__body {
+  color: #008080;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: "title img" "subtitle img" "text img";
+    grid-column-gap: 2em;
+  }
+  .about-me__title {
+    grid-column: 1;
+  }
+  .about-me__subtitle {
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+    width: 300px;
+  }
+}

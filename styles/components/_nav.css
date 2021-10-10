@@ -1,0 +1,48 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #008080;
+    height: 3em;
+    width: auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #002244;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+  .nav__link :hover {
+    color: var(--clr-light);
+  }
+}
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #008080;
+    height: 12em;
+    width: 7em;
+    justify-content: space-around;
+    align-items: left;
+  }
+  .nav__link {
+    text-decoration: none;
+    color: #002244;
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-size: small;
+  }
+  .nav__link :hover {
+    color: var(--clr-light);
+  }
+}
+.nav__link:hover {
+  color: var(--clr-light);
+}

@@ -1,0 +1,23 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap');
+
+$ff-primary: "Montserrat";
+$ff-secondary: "Roboto Slab";
+
+$fw-reg: 300;
+$fw-mid: 600;
+$fw-bold: 900;
+
+$clr-light: #E0EEEE;
+$clr-dark: #002244;
+$clr-accent: #008080;
+
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-h3: 1.25rem;
+$fs-nav: 1.15rem;
+$fs-body: 1rem;
+
+$bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+      0.125em 0.125 0.25em rgba(0,0,0,.15) ;

@@ -1,0 +1,11 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap");
+.portfolio-item-individual {
+  padding: 0 2em 2em;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.portfolio-item-individual .portfolio-item-individual p {
+  max-width: 800px;
+}

@@ -1,0 +1,80 @@
+@use "../base/abstracts" as *;
+
+
+
+
+@media (min-width: 768px)
+{
+
+    .nav 
+    {
+
+        display: flex;
+        flex-direction: row;
+        background-color: $clr-accent;
+        height: 3em;
+        width: auto;
+        justify-content: space-around;
+        align-items: center;
+       
+
+        &__link {
+            text-decoration: none;
+            color: $clr-dark;
+            font-family: $ff-primary;
+            font-weight: $fw-bold;
+            font-size: $fs-h3;
+
+
+            :hover {
+                color: var(--clr-light);
+              } 
+
+        }
+
+
+    }  
+        
+}
+
+
+@media (max-width: 768px)
+{
+
+    .nav 
+    {
+
+        display: flex;
+        flex-direction: column;
+        background-color: $clr-accent;
+        height: 12em;
+        width: 7em;
+        justify-content: space-around;
+        align-items: left;
+       
+
+        &__link {
+            text-decoration: none;
+            color: $clr-dark;
+            font-family: $ff-primary;
+            font-weight: $fw-bold;
+            font-size: small;
+
+            :hover {
+                color: var(--clr-light);
+              } 
+
+            
+        }
+
+    }  
+        
+}
+
+.nav__link:hover {
+    color: var(--clr-light);
+  } 
+
+
+
+

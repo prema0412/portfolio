@@ -1,0 +1,104 @@
+@use "../base/abstracts" as *;
+
+.my-services {
+
+    background-color: $clr-accent;    
+    background-image: url(images\bg6-services.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+    height: 29em;
+
+    &__title 
+    {
+        color: $clr-dark;
+        font-size: $fs-h1;
+        font-family: $ff-primary;
+        font-weight: $fw-bold;
+        position: relative;
+        text-align: left;
+     }
+
+     &__title::after {
+        content: '' ;
+        display: block;
+        color: var(--clr-dark);
+        width: 5em;
+        height: 1px;
+        margin: 0.2em auto 1em;
+        background: currentColor;
+        opacity: 0.25em;
+        position: absolute
+     }
+
+
+
+
+.services
+{
+
+    margin-bottom: 4em;
+    font-family: $ff-secondary;
+
+    &__service
+    {
+        color: $clr-light;
+        font-size: $fs-h3;
+        font-family: $ff-secondary;
+        font-weight: $fw-reg;
+    }
+
+    
+
+}
+.btn {
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px)
+
+{
+
+  .my-services
+  {
+
+    .services {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'h3 h3 h3'
+        'p p p'
+        ;
+        grid-gap: 1em;
+        margin-left: 0.4em;
+        margin-right: 0.4em;
+
+
+
+        &__service + &__service 
+        {
+            margin-left: 0.4em;
+        }
+    }
+
+   
+}    
+}
