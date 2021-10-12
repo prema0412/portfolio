@@ -6,6 +6,10 @@
   margin: 0 auto;
   max-width: 1000px;
 }
-.portfolio-item-individual .portfolio-item-individual p {
+.portfolio-item-individual p {
   max-width: 800px;
+  color: #008080;
+  font-family: "Montserrat";
+  font-size: 1.25rem;
+  font-weight: 300;
 }
